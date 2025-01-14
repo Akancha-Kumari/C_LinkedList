@@ -31,17 +31,17 @@ void init(Node **tail, Node **head, int val)
     *head = new_node;
 }
 
-// int main(int argc, char *argv[])
-// {
-//     Node *tail = NULL;
-//     Node *head = NULL;
+int main(int argc, char *argv[])
+{
+    Node *tail = NULL;
+    Node *head = NULL;
 
-//     init(&tail, &head, 10);
-//     insert_beginning(&tail, 20);
-//     insert_beginning(&tail, 30);
+    init(&tail, &head, 10);
+    insert_beginning(&tail, 20);
+    insert_beginning(&tail, 30);
 
-//     iteration(tail);
-//     iteration_Backward(head);
-//     deallocation_dll(&tail, &head);
-//     return (0);
-// }
+    iteration(tail);
+    iteration_Backward(head);
+    deallocation_dll(&tail, &head);
+    return (0);
+}
